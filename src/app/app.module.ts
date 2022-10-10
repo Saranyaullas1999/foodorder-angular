@@ -7,6 +7,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { IndexComponent } from './index/index.component';
 import { RouterModule,Routes } from '@angular/router';
 import { FoodComponent } from './food/food.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 const appRoutes:Routes=[
@@ -15,6 +16,9 @@ const appRoutes:Routes=[
   },
   {
     path:"food",component:FoodComponent
+  },
+  {
+    path:"contact",component:ContactComponent
   }
 ]
 @NgModule({
@@ -22,7 +26,8 @@ const appRoutes:Routes=[
     AppComponent,
     NavbarComponent,
     IndexComponent,
-    FoodComponent
+    FoodComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
